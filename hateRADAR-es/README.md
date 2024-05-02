@@ -8,6 +8,21 @@ The dataset is divided into two sets for reproducibility of experiments: trainin
 
     ID: The unique identifier for each tweet. You can use this ID to retrieve individual tweets from the Twitter API of your choice.
     Label: Binary label where 0 represents "No hate speech" and 1 represents "Hate speech detected".
+    Train Dataset:
+Train Dataset:
+    Number of Rows in DataFrame: 4000. This set is intended for model training and validation, ensuring comprehensive learning and robustness against overfitting.
+    Class Distribution:
+        0 (No hate speech): 3048 entries, accounting for 76.2% of the dataset.
+        1 (Hate speech detected): 952 entries, making up 23.8% of the dataset.
+
+Test Dataset:
+
+    Number of Rows in DataFrame: 1000. This set is used for model evaluation, providing an unbiased assessment of the model's performance on unseen data.
+    Class Distribution:
+        0 (No hate speech): 762 entries, representing 76.2% of the dataset.
+        1 (Hate speech detected): 238 entries, constituting 23.8% of the dataset.
+
+These configurations ensure that the experiments conducted are replicable and that the evaluation of the model is conducted under controlled and unbiased conditions.
 
 # Label Interpretation
 The criteria for labeling are based on detailed linguistic and contextual analysis as described in our paper, "Deep Learning Approaches for Identifying Anti-Refugee Speech in Spanish Texts." The labeling process was designed to capture not only explicit expressions of hate but also subtler forms of negative sentiment that could be indicative of underlying prejudice. This comprehensive approach ensures that the dataset supports the development of NLP models that are sensitive to the nuances of language used in hate speech.
