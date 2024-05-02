@@ -4,8 +4,7 @@ The hateRADAR-es dataset comprises tweets collected to study hate speech against
 
 # File Description
 
-The dataset is provided in a CSV format, containing the following columns:
+The dataset is divided into two sets for reproducibility of experiments: training and testing datasets. Both datasets are provided in CSV format with the following fields:
 
-    tweet_id: Unique identifier for each tweet.
-    text: Text content of the tweet.
-    label: Annotation label indicating the presence of hate speech.
+    ID: The unique identifier for each tweet. You can use this ID to retrieve individual tweets from the Twitter API of your choice.
+    Label: Binary label where 0 represents "No hate speech" and 1 represents "Hate speech detected".
