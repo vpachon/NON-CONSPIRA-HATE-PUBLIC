@@ -2,27 +2,24 @@
 
 The hateRADAR-es dataset comprises tweets collected to study hate speech against refugees in the Spanish language. It includes several thousand tweets that were gathered using keywords related to refugees and immigration, and further filtered to focus on potential hate speech content.
 
-# File Description
+# **File Description**
 
-The dataset is divided into two sets for reproducibility of experiments: training and testing datasets. Both datasets are provided in CSV format with the following fields:
+The dataset is divided into two sets to ensure the reproducibility of experiments: a **training dataset** and a **testing dataset**. Both datasets are provided in CSV format and include the following fields:
 
-    ID: The unique identifier for each tweet. You can use this ID to retrieve individual tweets from the Twitter API of your choice.
-    Label: Binary label where 0 represents "No hate speech" and 1 represents "Hate speech detected".
-    Train Dataset:
-Train Dataset:
-    Number of Rows in DataFrame: 4000. This set is intended for model training and validation, ensuring comprehensive learning and robustness against overfitting.
-    Class Distribution:
-        0 (No hate speech): 3048 entries, accounting for 76.2% of the dataset.
-        1 (Hate speech detected): 952 entries, making up 23.8% of the dataset.
+- **ID**: The unique identifier for each tweet. You can use this ID to retrieve individual tweets from the Twitter API of your choice.
+- **Label**: Binary label where `0` represents "No hate speech" and `1` represents "Hate speech detected".
 
-Test Dataset:
+### **Train Dataset:** 
+- **Number of Rows in DataFrame**: 4000. This set is intended for model training and validation, ensuring comprehensive learning and robustness against overfitting.
+- **Class Distribution**:
+  - **0 (No hate speech)**: 3048 entries, accounting for 76.2% of the dataset.
+  - **1 (Hate speech detected)**: 952 entries, making up 23.8% of the dataset.
 
-    Number of Rows in DataFrame: 1000. This set is used for model evaluation, providing an unbiased assessment of the model's performance on unseen data.
-    Class Distribution:
-        0 (No hate speech): 762 entries, representing 76.2% of the dataset.
-        1 (Hate speech detected): 238 entries, constituting 23.8% of the dataset.
-
-These configurations ensure that the experiments conducted are replicable and that the evaluation of the model is conducted under controlled and unbiased conditions.
+### **Test Dataset:**
+- **Number of Rows in DataFrame**: 1000. This set is used for model evaluation, providing an unbiased assessment of the model's performance on unseen data.
+- **Class Distribution**:
+  - **0 (No hate speech)**: 762 entries, representing 76.2% of the dataset.
+  - **1 (Hate speech detected)**: 238 entries, constituting 23.8% of the dataset.
 
 # Label Interpretation
 The criteria for labeling are based on detailed linguistic and contextual analysis as described in our paper, "Deep Learning Approaches for Identifying Anti-Refugee Speech in Spanish Texts." The labeling process was designed to capture not only explicit expressions of hate but also subtler forms of negative sentiment that could be indicative of underlying prejudice. This comprehensive approach ensures that the dataset supports the development of NLP models that are sensitive to the nuances of language used in hate speech.
